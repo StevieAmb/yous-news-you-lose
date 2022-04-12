@@ -1,25 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react/cjs/react.production.min';
+import NavBar from './NavBar';
+import ArticlesContainer from './ArticlesContainer';
+import { Route, Switch } from 'react-router-dom';
+import ArticleDetails from './ArticleDetails';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      articles: []
+    }
+  }
+
+  componentDidMount() {
+
+  }
+
+  render() {
+    return (
+      <main className="App">
+        <NavBar />
+        Hello Friends!
+        <ArticlesContainer/>
+        <ArticleDetails />
+      </main>
+    );
+  }
 }
 
 export default App;
