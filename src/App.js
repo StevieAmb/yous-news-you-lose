@@ -26,8 +26,8 @@ class App extends Component {
       <main className="App">
         <NavBar />
         Hello Friends!
-        <ArticlesContainer articles={this.state.articles}/>
-        <ArticleDetails />
+        <Route exact path="/" <ArticlesContainer articles={this.state.articles}/>
+        <ArticleDetails articles={this.state.articles} />
       </main>
     );
   }
