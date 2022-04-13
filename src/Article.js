@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Article = () => {
+const Article = ({title, img, abstract}) => {
   return (
     <article>
-      <h3>I am an article</h3>
-      <p>This is a little bit of what I'm about</p>
-      <button>See More Here</button>
+      <h3>{title}</h3>
+      <img src={img}/>
+      <p>{abstract}</p>
+      <button>More Details Here</button>
     </article>
   )
 }
