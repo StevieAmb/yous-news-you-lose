@@ -25,9 +25,8 @@ class App extends Component {
     return (
       <main className="App">
         <NavBar />
-        Hello Friends!
-        <Route exact path="/" <ArticlesContainer articles={this.state.articles}/>
-        <ArticleDetails articles={this.state.articles} />
+        <Route exact path="/" render={() => <ArticlesContainer articles={this.state.articles} />}></Route>
+        <Route exact path="/article/:id" render={() => <ArticleDetails articles={this.state.articles} />}></Route>
       </main>
     );
   }
