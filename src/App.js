@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import ArticlesContainer from './ArticlesContainer';
 import { Route, Switch } from 'react-router-dom';
 import ArticleDetails from './ArticleDetails';
+import fetchArticles from './apiCalls';
 
 class App extends Component {
   constructor() {
@@ -15,15 +16,17 @@ class App extends Component {
   }
 
   componentDidMount() {
-
+    fetchArticles()
+    .then(data => this.setState({articles: data.results}))
   }
 
   render() {
+    {console.log("hey hey", this.state.articles)}
     return (
       <main className="App">
         <NavBar />
         Hello Friends!
-        <ArticlesContainer/>
+        <ArticlesContainer articles={this.state.articles}/>
         <ArticleDetails />
       </main>
     );
