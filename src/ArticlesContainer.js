@@ -14,7 +14,7 @@ const ArticlesContainer = ({articles}) => {
     )
   })
   return (
-    <section class="front-page-articles">
+    <section className="front-page-articles">
       {allArticles}
     </section>
   )

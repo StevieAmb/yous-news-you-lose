@@ -1,5 +1,6 @@
 import React from 'react';
 import { Component } from 'react/cjs/react.production.min';
+import './NavBar.css'
 
 class NavBar extends Component {
   constructor() {
@@ -7,6 +8,16 @@ class NavBar extends Component {
     this.state = {
       category: ''
     }
+  }
+
+  //I have to submit the word to the app component,
+  //And then I have to 
+
+  submitSearch = (e) => {
+    e.preventDefault()
+    const word = {...this.state}
+    this.props.findArt(word)
+    this.clearInput()
   }
 
   clearInput = () => {
@@ -20,7 +31,11 @@ class NavBar extends Component {
   render() {
     return (
       <nav>
-        This is the navigation bar!
+        <div className='page-title'>
+        The New York Times:
+        <p className='catch-phrase'>Yous News, You Lose:</p> Terms of Art
+        </div>
+        <div className='search-input'>
         <label>
           Search by category:
         </label>
@@ -33,7 +48,8 @@ class NavBar extends Component {
             onChange={e => this.handleChange(e)}
             required
         />
-        <button>Find Some Articles</button>
+        <button onClick={e => this.submitSearch(e)}>Find Some Articles</button>
+        </div>
       </nav>
     )
   }
