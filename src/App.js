@@ -11,8 +11,21 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      articles: []
+      articles: [],
+      filteredArticles: []
     }
+  }
+
+  findArticles = (userInput) => {
+    console.log("see", userInput.category)
+    let searched = userInput.category.toLowerCase()
+    let searchedArticles = this.state.articles.filter(article => {
+      let title = article.title.toLowerCase()
+      if(title.includes(searched)) {
+        return article
+      }
+    })
+    console.log('found articles', searchedArticles)
   }
 
   componentDidMount() {
@@ -20,14 +33,27 @@ class App extends Component {
     .then(data => this.setState({articles: data.results}))
   }
 
+  showDetails = (id) => {
+    const detail = this.state.articles.find(article => article["created_date"] === id)
+    console.log("boom", detail)
+    if(detail) {
+      return <ArticleDetails details={detail} />
+    }
+  }
+
   render() {
     {console.log("hey hey", this.state.articles)}
     return (
+      <>
+        <NavBar findArt={this.findArticles}/>
       <main className="App">
-        <NavBar />
         <Route exact path="/" render={() => <ArticlesContainer articles={this.state.articles} />}></Route>
-        <Route exact path="/article/:id" render={() => <ArticleDetails articles={this.state.articles} />}></Route>
-      </main>
+        <Route exact path="/article/:id" render={({match}) => {
+          return this.showDetails(match.params.id)
+          }
+        }></Route>
+      </main>  
+      </>
     );
   }
 }
