@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Component } from 'react/cjs/react.production.min';
 import './NavBar.css'
 
@@ -14,7 +15,6 @@ class NavBar extends Component {
   //And then I have to 
 
   submitSearch = (e) => {
-    e.preventDefault()
     const word = {...this.state}
     this.props.findArt(word)
     this.clearInput()
@@ -37,7 +37,7 @@ class NavBar extends Component {
         </div>
         <div className='search-input'>
         <label>
-          Search by category:
+          Search by Title:
         </label>
         <input
             type="text"
@@ -48,9 +48,18 @@ class NavBar extends Component {
             onChange={e => this.handleChange(e)}
             required
         />
-        <button onClick={e => this.submitSearch(e)}>Find Some Articles</button>
+        <Link to="/searched">
+          <button onClick={e => this.submitSearch(e)}>Find Some Articles</button>
+        </Link>
         </div>
       </nav>
+      // so by passing it through the component prop.const FancyLink = React.forwardRef(({ navigate, ...props }, ref) => {
+      //   return (
+      //     <a ref={ref} {...props} onClick={handleClick}>💅 {props.children}</a>
+      //   )
+      // })
+      
+      // <Link to="/" component={FancyLink} />
     )
   }
 }
