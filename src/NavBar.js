@@ -43,7 +43,7 @@ class NavBar extends Component {
             type="text"
             name="category-search"
             id="categorySearch"
-            placeholder="World, art, US, etc..."
+            placeholder="music, ballet, tv shows"
             value={this.state.category}
             onChange={e => this.handleChange(e)}
             required
@@ -53,13 +53,6 @@ class NavBar extends Component {
         </Link>
         </div>
       </nav>
-      // so by passing it through the component prop.const FancyLink = React.forwardRef(({ navigate, ...props }, ref) => {
-      //   return (
-      //     <a ref={ref} {...props} onClick={handleClick}>💅 {props.children}</a>
-      //   )
-      // })
-      
-      // <Link to="/" component={FancyLink} />
     )
   }
 }

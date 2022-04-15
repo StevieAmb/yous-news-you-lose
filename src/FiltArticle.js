@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
   return (
     <article>
       <h3>{title}</h3>
-      <img src={img}/>
+      <img src={img} alt={title}/>
       <p className='abstract'>{abstract}</p>
       <NavLink to={`/article/${id}`}>
       <button>More Details Here</button>
