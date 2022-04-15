@@ -13,7 +13,7 @@ describe('Assertions', () => {
     cy.url('http://localhost:3000/searched')
     cy.get('.App')
     .contains('Sorry')
-    .get('.return-home')
+    .get('.return-home') 
     .contains('Go Back Home').click()
     cy.url('http://localhost:3000/')
   })
