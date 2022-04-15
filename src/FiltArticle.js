@@ -1,10 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Article.css';
 
-const Article = ({id, title, img, abstract}) => {
+ const FiltArticle = ({id, title, img, abstract}) => {
   return (
-    <article className='article-card'>
+    <article>
       <h3>{title}</h3>
       <img src={img}/>
       <p>{abstract}</p>
@@ -13,7 +12,7 @@ const Article = ({id, title, img, abstract}) => {
       </NavLink>
     </article>
   )
-}
+ }
 
 
-export default Article;
+export default FiltArticle;

@@ -4,9 +4,9 @@ import './ArticlesContainer.css';
 
 const ArticlesContainer = ({articles}) => {
   let allArticles = articles.map(article => {
-    console.log("hi hi", article.multimedia[1].url)
     return (
       <Article 
+        id={article["created_date"]}
         title={article.title}
         img={article.multimedia[1].url}
         abstract={article.abstract}
@@ -14,7 +14,7 @@ const ArticlesContainer = ({articles}) => {
     )
   })
   return (
-    <section class="front-page-articles">
+    <section className="front-page-articles">
       {allArticles}
     </section>
   )

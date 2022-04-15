@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Component } from 'react/cjs/react.production.min';
+import './NavBar.css'
 
 class NavBar extends Component {
   constructor() {
@@ -7,6 +9,15 @@ class NavBar extends Component {
     this.state = {
       category: ''
     }
+  }
+
+  //I have to submit the word to the app component,
+  //And then I have to 
+
+  submitSearch = (e) => {
+    const word = {...this.state}
+    this.props.findArt(word)
+    this.clearInput()
   }
 
   clearInput = () => {
@@ -20,9 +31,13 @@ class NavBar extends Component {
   render() {
     return (
       <nav>
-        This is the navigation bar!
+        <div className='page-title'>
+        The New York Times:
+        <p className='catch-phrase'>Yous News, You Lose:</p> Terms of Art
+        </div>
+        <div className='search-input'>
         <label>
-          Search by category:
+          Search by Title:
         </label>
         <input
             type="text"
@@ -33,8 +48,18 @@ class NavBar extends Component {
             onChange={e => this.handleChange(e)}
             required
         />
-        <button>Find Some Articles</button>
+        <Link to="/searched">
+          <button onClick={e => this.submitSearch(e)}>Find Some Articles</button>
+        </Link>
+        </div>
       </nav>
+      // so by passing it through the component prop.const FancyLink = React.forwardRef(({ navigate, ...props }, ref) => {
+      //   return (
+      //     <a ref={ref} {...props} onClick={handleClick}>💅 {props.children}</a>
+      //   )
+      // })
+      
+      // <Link to="/" component={FancyLink} />
     )
   }
 }
