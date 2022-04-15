@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Article.css';
+import '../Styles/Article.css';
 
 const Article = ({id, title, img, abstract}) => {
   return (
