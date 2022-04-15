@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import '../Styles/App.css';
 import { Component } from 'react/cjs/react.production.min';
-import NavBar from './NavBar';
+import NavBar from '../NavBar';
 import ArticlesContainer from './ArticlesContainer';
 import { Route, Switch } from 'react-router-dom';
 import ArticleDetails from './ArticleDetails';
-import fetchArticles from './apiCalls';
+import fetchArticles from '../apiCalls';
 import FilteredArticles from './FilteredArticles';
 
 class App extends Component {

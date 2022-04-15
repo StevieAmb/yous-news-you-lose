@@ -1,6 +1,6 @@
 import React from 'react';
 import Article from './Article';
-import './ArticlesContainer.css';
+import '../Styles/ArticlesContainer.css';
 
 const ArticlesContainer = ({articles}) => {
   let allArticles = articles.map(article => {

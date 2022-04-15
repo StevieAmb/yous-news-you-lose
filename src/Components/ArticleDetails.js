@@ -1,5 +1,5 @@
 import React from 'react';
-import './ArticleDetails.css';
+import '../Styles/ArticleDetails.css';
 import { NavLink } from 'react-router-dom';
 
 const ArticleDetails = ({details}) => {
