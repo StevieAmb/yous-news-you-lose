@@ -12,7 +12,7 @@ describe('Assertions', () => {
     .get('img').should('exist')
     .get('.details-button')
     .contains('More').click()
-    cy.url('http://localhost:3000/searched')
+    cy.url('http://localhost:3000/http://localhost:3000/article/2022-04-15T01:00:07-04:00')
     cy.get('.article-details')
     .contains('Written By Alex Marshall')
     .get('p')
