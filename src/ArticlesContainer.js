@@ -4,7 +4,6 @@ import './ArticlesContainer.css';
 
 const ArticlesContainer = ({articles}) => {
   let allArticles = articles.map(article => {
-    console.log("hi hi", article.multimedia[0].url)
     return (
       <Article 
         id={article["created_date"]}
