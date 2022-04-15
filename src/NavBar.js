@@ -49,7 +49,7 @@ class NavBar extends Component {
             required
         />
         <Link to="/searched">
-          <button onClick={e => this.submitSearch(e)}>Find Some Articles</button>
+          <button className='search-button' onClick={e => this.submitSearch(e)}>Find Some Articles</button>
         </Link>
         </div>
       </nav>

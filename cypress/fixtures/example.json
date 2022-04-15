@@ -1,0 +1,137 @@
+{
+    "results": [
+    {
+      "section": "arts",
+      "subsection": "",
+      "title": "War Brings New Iron Curtain Down on Russia’s Storied Ballet Stages",
+      "abstract": "Ballet has long been a symbol of Russian culture. Now it is becoming a symbol of Russian isolation.",
+      "url": "https://www.nytimes.com/2022/04/15/arts/olga-smirnova-ballet-bolshoi-ukraine-war.html",
+      "uri": "nyt://article/525c6357-ef2c-5df6-bb79-d4933450cae5",
+      "byline": "By Alex Marshall",
+      "item_type": "Article",
+      "updated_date": "2022-04-15T08:00:41-04:00",
+      "created_date": "2022-04-15T01:00:07-04:00",
+      "published_date": "2022-04-15T01:00:07-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Dancing",
+        "Russian Invasion of Ukraine (2022)",
+        "Raymonda (Ballet)",
+        "Spartacus (Ballet)"
+      ],
+      "org_facet": [
+        "Bolshoi Theater",
+        "Dutch National Ballet",
+        "Mariinsky Ballet"
+      ],
+      "per_facet": [
+        "Smirnova, Olga",
+        "Urin, Vladimir",
+        "Ratmansky, Alexei",
+        "Maillot, Jean-Christophe"
+      ],
+      "geo_facet": [
+        "Amsterdam (Netherlands)",
+        "Netherlands",
+        "Moscow (Russia)",
+        "Russia",
+        "St Petersburg (Russia)",
+        "Ukraine"
+      ],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2022/04/12/arts/00smirnova-ballet-7/00smirnova-ballet-7-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1363,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The star ballerina Olga Smirnova with Semyon Chudin at the Bolshoi Theater in Moscow in 2014. ",
+          "copyright": "James Hill for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/04/12/arts/00smirnova-ballet-7/00smirnova-ballet-7-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The star ballerina Olga Smirnova with Semyon Chudin at the Bolshoi Theater in Moscow in 2014. ",
+          "copyright": "James Hill for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/04/12/arts/00smirnova-ballet-7/00smirnova-ballet-7-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The star ballerina Olga Smirnova with Semyon Chudin at the Bolshoi Theater in Moscow in 2014. ",
+          "copyright": "James Hill for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3KMyFww"
+    },
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "When Classical Music Was an Alibi",
+      "abstract": "The idea that musicians and their work are apolitical flourished after World War II, in part thanks to the process of denazification.",
+      "url": "https://www.nytimes.com/2022/04/15/arts/music/classical-music-nazi-world-war-ii.html",
+      "uri": "nyt://article/05dd091b-6f71-53b2-a802-50fc8763bcd7",
+      "byline": "By Emily Richmond Pollock and Kira Thurman",
+      "item_type": "Article",
+      "updated_date": "2022-04-15T09:23:25-04:00",
+      "created_date": "2022-04-15T09:00:07-04:00",
+      "published_date": "2022-04-15T09:00:07-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Classical Music",
+        "Music",
+        "Holocaust and the Nazi Era",
+        "World War II (1939-45)"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "camilla williams",
+        "Schoenberg, Arnold"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2022/04/17/arts/17denazi-1/17denazi-1-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1571,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bombed concert halls and opera houses in formerly Nazi territories were potent symbols of destruction and the necessity of rebuilding, but also enabled the focus to shift from Nazi atrocities to German suffering. ",
+          "copyright": "Keystone Features/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/04/17/arts/17denazi-1/17denazi-1-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bombed concert halls and opera houses in formerly Nazi territories were potent symbols of destruction and the necessity of rebuilding, but also enabled the focus to shift from Nazi atrocities to German suffering. ",
+          "copyright": "Keystone Features/Getty Images"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/04/17/arts/17denazi-1/17denazi-1-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bombed concert halls and opera houses in formerly Nazi territories were potent symbols of destruction and the necessity of rebuilding, but also enabled the focus to shift from Nazi atrocities to German suffering. ",
+          "copyright": "Keystone Features/Getty Images"
+        }
+      ],
+      "short_url": "https://nyti.ms/3KKLG9K"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ const Article = ({id, title, img, abstract}) => {
       <img src={img}/>
       <p>{abstract}</p>
       <NavLink to={`/article/${id}`}>
-      <button>More Details Here</button>
+      <button className='details-button'>More Details Here</button>
       </NavLink>
     </article>
   )

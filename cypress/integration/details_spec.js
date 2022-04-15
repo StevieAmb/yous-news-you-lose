@@ -1,0 +1,22 @@
+describe('Assertions', () => {
+  beforeEach(() => {
+    cy.intercept('GET', 'https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=1Qzvpl0KwcglnxxeAwe5oNNZMwjTADYj', {fixture: 'example.json'})
+    cy.visit('http://localhost:3000/')
+  })
+  it('User should be able to choose one article from a list, and click the button underneath to see more details', () => {
+    cy.get('.front-page-articles')
+    .children('article')
+    .should('have.length', 2)
+    .eq(1)
+    .contains('When Classical Music')
+    .get('img').should('exist')
+    .get('.details-button')
+    .contains('More').click()
+    cy.url('http://localhost:3000/http://localhost:3000/article/2022-04-15T01:00:07-04:00')
+    cy.get('.article-details')
+    .contains('Written By Alex Marshall')
+    .get('p')
+    .contains('See Full Article')
+    .get('a')
+  })
+})

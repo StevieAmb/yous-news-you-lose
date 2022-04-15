@@ -28,7 +28,7 @@ const FilteredArticles = ({filtered}) => {
       <section>
     <p>Sorry, can't find anything based on your search!</p>
     <NavLink to="/">
-      <button>Go Back Home</button>
+      <button className='return-home'>Go Back Home</button>
     </NavLink>
       </section>
     )
