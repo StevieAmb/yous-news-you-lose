@@ -11,9 +11,9 @@ Welcome to Yous News, You Lose! This website uses the New York Times API to brin
 - [Credit](#credit)
 
 ## OVERVIEW
-Not Furgotten is a project for the Turing School of Software and Design that was built with `create-react-app`. This project allowed 
+Yous News Your Lose is a project for the Turing School of Software and Design that was built with `create-react-app`. This project allowed us to pull data from the New York times API based on section. For specifics, the section is the art. I pulled the data to create components that display each article. In addition, the user is able to click into the article to see more details, and from the additional details, they are able to go back home.
 
-Below are some GIFs showing off the features of the Yous News, You Lose Website:  
+The user is also able to filter through the article in an input field in a navbar, to find articles based on specifics about art they are interested in. From the filtered list, they can still see more details about an article, and go back home. If what the user types into the input field is not available, they will be given a message that says there aren't any articles based on what they searched, and they will be given a button which will direct them back home.
 
 
 
