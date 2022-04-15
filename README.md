@@ -47,7 +47,7 @@ In the future, we would want to:
 ## AUTHORS/LINKS
 
 #### Project Links
-- [Project Board](https://github.com/orgs/2110CapstoneProject/projects/1)
+- [Project Board](https://github.com/StevieAmb/yous-news-you-lose/projects/1)
 ![Screen Shot 2022-04-14 at 2 00 02 PM](https://user-images.githubusercontent.com/89324625/163591736-c2d788de-ba0a-419c-973b-6a2db1487530.png)
 - [Wireframe](https://excalidraw.com/)
 
