@@ -40,7 +40,7 @@ In the future, we would want to:
 ## INSTRUCTIONS
 - fork the repository
 - copy the SSH clone address
-- run ```git clone git@github.com:2110CapstoneProject/not-fur-gotten-fe.git``` in your repo
+- run ```git clone git@github.com:StevieAmb/yous-news-you-lose.git``` in your repo
 - run ```npm install``` in your terminal
 - run ```npm start``` in the Terminal visit localhost:3000
 
