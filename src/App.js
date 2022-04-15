@@ -6,6 +6,7 @@ import ArticlesContainer from './ArticlesContainer';
 import { Route, Switch } from 'react-router-dom';
 import ArticleDetails from './ArticleDetails';
 import fetchArticles from './apiCalls';
+import FilteredArticles from './FilteredArticles';
 
 class App extends Component {
   constructor() {
@@ -25,7 +26,7 @@ class App extends Component {
         return article
       }
     })
-    console.log('found articles', searchedArticles)
+    this.setState({filteredArticles: searchedArticles})
   }
 
   componentDidMount() {
@@ -42,7 +43,7 @@ class App extends Component {
   }
 
   render() {
-    {console.log("hey hey", this.state.articles)}
+    {console.log("hey hey", this.state.filteredArticles)}
     return (
       <>
         <NavBar findArt={this.findArticles}/>
@@ -50,8 +51,10 @@ class App extends Component {
         <Route exact path="/" render={() => <ArticlesContainer articles={this.state.articles} />}></Route>
         <Route exact path="/article/:id" render={({match}) => {
           return this.showDetails(match.params.id)
-          }
-        }></Route>
+        }
+      }></Route>
+      <Route exact path="/searched" render={() => <FilteredArticles filtered={this.state.filteredArticles} />}></Route>
+        {/* <Route exact path="/searched" render={() => console.log('hello')}></Route> */}
       </main>  
       </>
     );
