@@ -17,7 +17,6 @@ class App extends Component {
   }
 
   findArticles = (userInput) => {
-    console.log("see", userInput.category)
     let searched = userInput.category.toLowerCase()
     let searchedArticles = this.state.articles.filter(article => {
       let title = article.title.toLowerCase()
